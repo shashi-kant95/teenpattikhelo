@@ -1,0 +1,267 @@
+.App {
+  text-align: center;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.box-shadow-div{
+  box-shadow: 8px 8px 16px #000000, -8px -8px 16px #3e3535;
+}
+
+.text-shadow{
+text-shadow:rgba(0,0,0,.83) 9px 3px 9px;
+    border-bottom: solid;
+}
+
+.cardc {
+  height: 70%;
+  width: 20%;
+  margin-left: 1.5%;
+  border-radius: 20px;
+  background: (80, 80, 80);
+  box-shadow: rgb(18, 17, 17) 8px 8px 16px, rgb(0, 0, 0) -8px -8px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cardNumberText {
+  color: #424242;
+  /* font-size: x-large; */
+  font-weight: bold;
+  text-shadow: rgba(0, 0, 0, 0.83) 9px 3px 9px;
+  /* margin-top: 50%; */
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+.timerC {
+  position: absolute;
+  height: 10vh;
+  width: 10vh;
+  border-radius: 50%;
+  top: calc(50% - 5vh);
+  left: calc(50% - 5vh);
+  z-index: 22
+}
+
+.timerStyle  {
+  border-radius:50%;
+  display: flex; 
+  justify-content:center;
+  align-items:center; 
+  font-weight:bolder;
+  border:solid 2px; 
+  border-radius:50%; 
+  height:10vh; 
+  width :10vh;
+}
+
+.game-header{
+  background-color: #282c34;
+  color: wheat;
+  font-weight: bolder;
+  text-transform: uppercase;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  padding: 1vh;
+}
+
+.amount-btn{
+  height: 5vh;
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid #282c34 1px;
+  border-radius: 5px;
+  margin-top: 1vh;
+  cursor: pointer;
+}
+
+.bet-buttons{
+  width: 48%;
+  border-radius: 5px;
+  border: solid black 1px;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.dfc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.DN{
+  display: none!important;
+}
+
+.game-area {
+  width: 100%;
+  height: 40vh;
+  border-bottom: solid black 2px;
+  display: flex;
+  position: relative;
+  background-color: #292828;
+}
+
+.leftGdiv {
+  width: 50%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightGdiv  {
+  width: 50%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-bet-block{
+  max-height: 50vh;
+  overflow: auto;
+}
+
+img{
+  transition: opacity 0.5s ease; /* Example transition effect: opacity */
+}
+
+img:hover {
+  opacity: 0.7; /* Example hover effect: reduce opacity */
+}
+
+.image-animation {
+  /* Define other styles for your image */
+}
+
+/* Additional styles for the image */
+.image-animation:hover {
+  opacity: 0.7; /* Example hover effect: reduce opacity */
+}
+
+.card-no{
+  position: absolute;
+  top: -4vh;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+
+
+
+@media (max-width: 576px) {
+.game-area {
+  width: 100%;
+  height: 25vh!important;
+  border-bottom: solid red 2px;
+  display: flex;
+  position: relative;
+  background-color:#292828;
+  padding-top: 2vh;
+  border: unset;
+}
+.leftGdiv {
+  width: 50%;
+  height: 23vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.rightGdiv  {
+  width: 50%;
+  height: 23vh;
+  display: flex;
+  align-items: flex-start;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.cardc {
+  height: 30%;
+  width: 20%;
+  margin-left: 1.5%;
+  border-radius: 5px;
+  background: (80, 80, 80);
+  box-shadow: rgb(18, 17, 17) 8px 8px 16px, rgb(0, 0, 0) -8px -8px 16px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 2vw;
+  position: relative;
+}
+
+.timerC {
+  position: absolute;
+  height: 6vh;
+  width: 6vh;
+  border-radius: 50%;
+  top: calc(50% - 3vh);
+  left: calc(50% - 3vh);
+  z-index: 22
+}
+
+.timerStyle  {
+  height:6vh;
+  width:6vh;
+  border-radius:50%;
+  display: flex; 
+  justify-content:center;
+  align-items:center; 
+  font-weight:bolder;
+  border:solid 2px; 
+  border-radius:50%; 
+}
+
+.game-bet-block{
+  max-height: 65vh;
+  overflow: auto;
+}
+
+}

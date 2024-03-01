@@ -1,0 +1,23 @@
+/* SignUpForm.css */
+
+.signup-card {
+    background-color: #fff; /* White background for the card */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    max-width: 400px; /* Limit width of the card */
+    width: 100%; /* Ensure card takes full width of parent */
+    transition: transform 0.2s ease; /* Add smooth transition effect */
+  }
+  
+  .signup-card:hover {
+    transform: translateY(-5px); /* Move the card up slightly on hover */
+  }
+  
+  .signup-card .form-control {
+    border-radius: 8px; /* Rounded corners for form inputs */
+  }
+  
+  .signup-card .btn {
+    border-radius: 8px; /* Rounded corners for the button */
+  }
+  

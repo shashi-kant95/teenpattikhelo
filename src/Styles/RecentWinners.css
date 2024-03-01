@@ -1,0 +1,41 @@
+.rounded-blocks-container {
+    overflow-x: auto;
+    max-width: 60vw;
+    border-bottom: solid 1px rgb(68, 68, 68);
+  }
+  
+  .rounded-blocks-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .rounded-block {
+    width: 2vw;
+    height: 2vw;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+ 
+
+  @media (max-width: 576px) {
+    .rounded-blocks-container {
+        overflow-x: auto;
+        max-width: 100vw;
+        padding: 1vh 0 1vh 0;
+      }
+    .rounded-block {
+        width: 7vw;
+        height: 7vw;
+        background-color: #ccc;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+      }
+  }
+  
